@@ -36,12 +36,12 @@ struct Hourly: Decodable {
         case weather, pop
     }
 }
-extension Hourly: ConvertKelvinToCelsius {
+extension Hourly: ConvertKelvinToCelsius, ConvertDate {
     init(from decoder: Decoder) throws {
         let container = try decoder.container(keyedBy: CodingKeysHourly.self)
         
         let dtHourly = try container.decode(Int.self, forKey: .dt)
-        dt = Date(timeIntervalSince1970: TimeInterval(dtHourly))
+        dt = Hourly.convertDateFromJson(jsonDate: dtHourly)
 
         
         let tempHourly = try container.decode(Double.self, forKey: .temp)

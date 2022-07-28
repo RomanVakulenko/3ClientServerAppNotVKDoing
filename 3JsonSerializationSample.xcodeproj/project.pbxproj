@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AD690D002892BF1800411EED /* ConvertDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD690CFF2892BF1800411EED /* ConvertDate.swift */; };
 		AD982F39288EA70500CCAF86 /* WeatherInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD982F38288EA70500CCAF86 /* WeatherInfo.swift */; };
 		AD982F3B288EB6F200CCAF86 /* Current.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD982F3A288EB6F200CCAF86 /* Current.swift */; };
 		AD982F47288EC26D00CCAF86 /* Rain.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD982F46288EC26D00CCAF86 /* Rain.swift */; };
@@ -31,6 +32,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AD690CFF2892BF1800411EED /* ConvertDate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConvertDate.swift; sourceTree = "<group>"; };
 		AD982F38288EA70500CCAF86 /* WeatherInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherInfo.swift; sourceTree = "<group>"; };
 		AD982F3A288EB6F200CCAF86 /* Current.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Current.swift; sourceTree = "<group>"; };
 		AD982F46288EC26D00CCAF86 /* Rain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rain.swift; sourceTree = "<group>"; };
@@ -67,6 +69,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AD690D012892C0C900411EED /* Before4thLesson */ = {
+			isa = PBXGroup;
+			children = (
+				ADD9EF1A28854E70002699B3 /* JsonSerializationSample.swift */,
+				ADD9EF1D288577D3002699B3 /* JsonDecoder.swift */,
+			);
+			path = Before4thLesson;
+			sourceTree = "<group>";
+		};
 		AD982F37288EA6CD00CCAF86 /* Models */ = {
 			isa = PBXGroup;
 			children = (
@@ -120,10 +131,10 @@
 		ADD9EF1C28854E75002699B3 /* JSONDecoder */ = {
 			isa = PBXGroup;
 			children = (
-				ADD9EF1A28854E70002699B3 /* JsonSerializationSample.swift */,
-				ADD9EF1D288577D3002699B3 /* JsonDecoder.swift */,
-				ADBB82CB28914317002DA500 /* KelvinToCelsius.swift */,
+				AD690D012892C0C900411EED /* Before4thLesson */,
 				ADBB82C928904EC4002DA500 /* JsonTextDecoder.swift */,
+				AD690CFF2892BF1800411EED /* ConvertDate.swift */,
+				ADBB82CB28914317002DA500 /* KelvinToCelsius.swift */,
 			);
 			path = JSONDecoder;
 			sourceTree = "<group>";
@@ -207,6 +218,7 @@
 				AD982F4B288EC2E900CCAF86 /* Minutely.swift in Sources */,
 				AD982F47288EC26D00CCAF86 /* Rain.swift in Sources */,
 				AD982F4D288EC34100CCAF86 /* Hourly.swift in Sources */,
+				AD690D002892BF1800411EED /* ConvertDate.swift in Sources */,
 				AD982F3B288EB6F200CCAF86 /* Current.swift in Sources */,
 				ADD9EF0528854DE7002699B3 /* AppDelegate.swift in Sources */,
 				AD982F55288EDFCE00CCAF86 /* Alerts.swift in Sources */,
