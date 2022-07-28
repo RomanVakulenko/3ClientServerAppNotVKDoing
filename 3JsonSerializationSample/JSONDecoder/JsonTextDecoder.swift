@@ -132,7 +132,7 @@ func decodeFromText() {
         //decoder.dateDecodingStrategy = .secondsSince1970 //предустановленный метод перевода из разных форматов
         let model = try decoder.decode(WeatherInfo.self, from: data)
         print("---------------------------------")
-        print(model.daily)
+        print(model.hourly)
         
     } catch {
         print(error)
