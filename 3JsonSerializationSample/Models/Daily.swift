@@ -33,13 +33,13 @@ struct Daily: Decodable {
         case weather, clouds, pop, rain, uvi
     }
 }
-extension Daily: ConvertKelvinToCelsius {
+extension Daily: ConvertKelvinToCelsius, ConvertDate {
     init(from decoder: Decoder) throws {//...2. надо создать конструктор (получаем/создаем контейнер)
         let container = try decoder.container(keyedBy: CodingKeysDaily.self)
         
         //...3. надо распарсить свойства структуры - извлечь значения:
         let dtDaily = try container.decode(Int.self, forKey: .dt)
-        dt = Date(timeIntervalSince1970: TimeInterval(dtDaily))
+        dt = Daily.convertDateFromJson(jsonDate: dtDaily)
         
         let sunriseDaily = try container.decode(Int.self, forKey: .sunrise)
         sunrise = Date(timeIntervalSince1970: TimeInterval(sunriseDaily))
